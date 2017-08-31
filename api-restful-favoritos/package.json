@@ -9,6 +9,7 @@
   "author": "Miguel Angel Suarez Montiel",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4"
   }
 }
