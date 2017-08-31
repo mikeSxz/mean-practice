@@ -1,0 +1,14 @@
+{
+  "name": "api-restful-favoritos",
+  "version": "1.0.0",
+  "description": "Proyecto de API Restful del curso de NodeJS y Angular2 de Mike Montiel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Angel Suarez Montiel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
