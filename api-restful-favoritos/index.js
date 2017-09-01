@@ -1,9 +1,9 @@
 'use strict'
 
-var express = require('express');
+var app = require('./app');
+var port = process.env.port || 3678;
 
-var app = express();
-
-app.listen(3678, function () {
-    console.log('API REST FAVORITOS funcionando en http://localhost:3678');
+app.listen(port, () => {
+    console.log(`API REST FAVORITOS funcionando en http://localhost:${port}`);
+    console.log("otro console para validar el cambio automatico con el nodemon");
 });
