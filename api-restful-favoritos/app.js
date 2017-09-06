@@ -5,18 +5,12 @@ var bodyParser = require('body-parser');
 
 
 var app = express();
+var api = require('./routes/favoritos');
 
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+app.use('/api',api);
 
-app.get("/prueba/:nombre?", (request, response) => {
-    var nombre = "sin nombre";
-    if (request.params.nombre) {
-        nombre = request.params.nombre;
-    }
-
-    response.send({data: [1, 2, 3, 4, 5, 6, 7, 8, 9], texto: "Hola " + nombre + " desde NodeJS y Express"});
-});
 
 module.exports = app;
