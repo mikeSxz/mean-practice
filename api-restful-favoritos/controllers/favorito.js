@@ -39,6 +39,7 @@ function updateFavorito(request, response) {
 
     response.status(200).send({favorito: params,updated:true});
 }
+
 function deleteFavorito(request, response) {
     var params = request.body;
 
